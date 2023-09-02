@@ -1,0 +1,611 @@
+@font-face {
+    font-family: 'play';
+    src: url(./PlayfairDisplay-Regular.9647c7fa.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+canvas{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page4{
+    height: 300vh;
+    width: 100%;
+    position: relative;
+}
+#page5{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #FFFAF0;
+    
+}
+#page6{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #FFFAF0;
+}
+#page7{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #FFFAF0;
+}
+#page8{
+    height: 150vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+}
+#nav{
+    height: 10%;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 6.5%;
+}
+#nav svg{
+    position: absolute;
+    top: 0;
+    left:10.3%;
+    display: block;
+    height: 78%;
+    width: 78%;
+}
+#menu{
+    width: 35px;
+    height: 20px;
+    
+    position: absolute;
+    right: 5.5%;
+    top: 20%;
+}
+#line{
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+    margin-top: 20%;
+    border-radius: 1px;
+    
+}
+#page>h1{
+    color: white;
+    position: absolute;
+    top: 33%;
+    left: 75.7%;
+    transform: translate(-50%);
+    font-family: play;
+    font-size: 65px;
+    width: 28vw;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -3px;
+    word-spacing: 0;
+
+}
+#page>h5{
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 75.2%;
+    transform: translate(-50%);
+   
+    font-size: 18px;
+    width: 28vw;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    
+}
+#scrool{
+    height:5%;
+    width: 25%;
+   
+    position: absolute;
+    bottom: 25%;
+    right: -6%;
+    rotate: 270deg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#scrool>h5{
+    color: white;
+    font-size: 13px;
+    padding-left: 10px;
+    letter-spacing: 0;
+    transition: all ease 0.7s;
+}
+#scrool>h5:hover{
+    margin-left: 10%;
+}
+#scrool img{
+    rotate: 90deg;
+    padding-top: 40px;
+    height: 100px;
+    width: 25px;
+}
+#page1>h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20%;
+    font-family: play;
+    font-size: 60px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+}
+#man{
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80%;
+    height: 80%;
+    width: 75%;
+}
+#man>h5{
+    text-align: center;
+    line-height: 90px;
+    font-size: 22px;
+    font-weight: 100;
+}
+#man>h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: play;
+    font-weight: 100;
+    line-height: 50px;
+}
+#page1>img{
+    width: 75%;
+    position: absolute;
+    left: 15%;
+    z-index: 99;
+    transform: translate(-50%,-50%);
+    top:0;
+    
+}
+#page3 #team{
+    
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+
+}
+#team>h5{
+    text-align: center;
+    line-height: 70px;
+    font-size: 22px;
+    font-weight: 100;
+}
+#team>h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: play;
+    font-weight: 100;
+    line-height: 50px;
+}
+#page4 img{
+    position: fixed;
+    right: 0;
+    
+}
+#page4 #text{
+    height: 17%;
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    top:7%;
+    
+    
+    
+}
+#text>h3{
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 300;
+}
+#text>h2{
+    font-size: 35px;
+    font-family: play;
+    font-weight: 100;
+    margin-left: 10%;
+}
+#page4 #pompt{
+    height: 10%;
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    top: 33%;
+}
+#pompt>h3{
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 300;
+}
+#pompt>h2{
+    font-size: 35px;
+    font-family: play;
+    font-weight: 100;
+    margin-left: 10%;
+}
+#page4 #third{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    top: 39%;
+}
+#third>h3{
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 300;
+}
+#third>h2{
+    font-size: 35px;
+    font-family: play;
+    font-weight: 100;
+    margin-left: 10%;
+}
+#logo{
+    height: 20%;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%,-50%);
+    
+}
+#logo img{
+    
+    height: 100%;
+    width: 100%;
+    
+}
+#bottom{
+    height: 10%;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    bottom: 23%;
+    transform: translate(-50%,-50%);
+  
+}
+#bottom img{
+    
+    height: 100%;
+    width: 100%;
+    
+}
+#page4-part1 h1{
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+    transform: translate(-50%);
+    font-size: 80px;
+    font-family: play;
+    font-weight: 100;
+    width: 80%;
+}
+#page5>canvas{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+}
+#page5>#div{
+    height: 25%;
+    width: 70%;
+    
+    z-index: 100;
+    position:absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+}
+#page5>#div>h2{
+    color: white;
+    font-family: play;
+    font-size: 30px;
+    font-weight: 100;
+    opacity: 1;
+    z-index: 105;
+}
+#page5>#dav{
+    height: 7%;
+    width: 70%;
+    
+    z-index: 100;
+    position:absolute;
+    left: 50%;
+    top:77%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#dav h3{
+    font-size: 1.3vw;
+    color: white;
+    font-weight: 100;
+    padding-right: 17vw;
+    position: relative;
+    opacity: 1;
+    z-index: 105;
+}
+#dav h3::after{
+    content: "";
+    height: 1px;
+    width: 90%;
+    background-color: white;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    z-index: 105;
+}
+#page5>#dov{
+    height: 7%;
+    width: 90%;
+    
+    z-index: 100;
+    position:absolute;
+    left: 50%;
+    top:84%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#dov h3{
+    font-size: 1.3vw;
+    color: white;
+    font-weight: 100;
+    padding-right: 12vw;
+    position: relative;
+    opacity: 1;
+    z-index: 105;
+
+}
+.mav{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.mav h1{
+    font-family: play;
+    font-size: 5vw;
+    line-height: 5vw;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+.mav h3{
+    line-height: 10vw;
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+.mav h4{
+    line-height: 8vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: #E48A9F;
+    position: relative;
+    width: fit-content;
+    
+}
+.mav h4::after{
+    content: "";
+    height: 2px;
+    background-color: #E48A9F;
+    width: 30%;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    transition: all ease 0.5s;
+}
+.mav h4:hover::after{
+    left: 70%;
+    
+}
+#biv{
+    height: 10%;
+    width:80%;
+    position: absolute;
+    top: 5%;
+    left:60%;
+    transform: translate(-50%,-50%);
+}
+#biv h3{
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+#bav{
+    height:10%;
+    width: 70%;
+    position: absolute;
+    top: 10%;
+    left:55%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bav #line{
+    height: 1px;
+    width: 57%;
+    background-color:#E48A9F;
+    margin-top: 0;
+}
+#bav h4{
+    color: #E48A9F;
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+#sav{
+    height:10%;
+    width: 50%;
+    position: absolute;
+    top: 18%;
+    left:45.2%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sav h5{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+#sav h6{
+    font-size: 1.4vw;
+    font-weight: 100;
+    line-height: 25px;
+    color: #E48A9F;
+}
+#pav{
+    height:10%;
+    width: 63%;
+    position: absolute;
+    top: 35%;
+    left:51.5%;
+    transform: translate(-50%,-50%);
+}
+#pav h4{
+    font-weight: 100;
+    font-size: 1.4vw;
+    line-height: 7vw;
+}
+#pav p{
+    font-weight: 100;
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+}
+#pov{
+    height:10%;
+    width: 63%;
+    position: absolute;
+    top: 64%;
+    left:51.5%;
+    transform: translate(-50%,-50%);
+}
+#pov h3{
+    color: #E48A9F;
+    font-weight: 100;
+    font-size: 1.4vw; 
+    width: fit-content;
+    position: relative;
+}
+#pov h3::after{
+    content: "";
+    height: 1.5px;
+    background-color: #E48A9F;
+    width: 30%;
+    position: absolute;
+    bottom: -70%;
+    left: 0;
+    transition: all ease 0.5s;
+}
+#pov h3:hover::after{
+    left: 70%;
+    
+}
+#piv{
+    height: 20%;
+    width: 100%;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+#piv svg{
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%);
+    display: block;
+    height: 25%;
+    width: 25%;
+    fill:#000;
+}
+#piv h3{
+    font-size: 1vw;
+    font-weight: 100;
+    margin-top: -3%;
+}
+#piv #logos{
+    height:20%;
+    width: 30%;
+    position: absolute;
+    bottom: 20%;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    width: 20%;
+    
+
+    
+}
+.logo i{
+   
+    font-size: 30px;
+    color: #E48A9F;
+   
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-left: 2px solid #E48A9F;
+
+}
